@@ -1,0 +1,128 @@
+@font-face {
+    font-family: "Mighty Souly";
+    src: url() format("truetype");
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    user-select: none;
+    letter-spacing: 10px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: auto;
+    gap: 10px;
+}
+
+div.container {
+    max-width: 350px;
+    max-height: 350px;
+    min-width: 350px;
+    min-height: 350px;
+    display: flex;
+    flex-wrap: wrap;
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    justify-content: center;
+    flex-shrink: 0;
+    flex-grow: 0;
+}
+
+.square {
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+div.buttons-for-user-customization {
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    width: 500px;
+}
+
+button.number-square-change-button, button.erase-button, button.color-button, button#theme {
+    font-family: "Mighty Souly";
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+button.number-square-change-button, button.erase-button, button#theme {
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+button#theme img {
+    width: 30px;
+    height: 30px;
+}
+
+div.alert-container {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    order: 1;
+
+}
+
+img.alert-image {
+    height: 25px;
+    background-color: black;
+    border-radius: 100px;
+}
+
+span.alert-to-erase {
+    font-family: "Mighty Souly";
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+/* D A R K */
+
+.dark-mode {
+    background-color: #2B2D31;
+}
+
+button.number-square-change-button-dark {
+    background-color: #202224;
+    color: #dcddde;
+    border: 2px solid #dcddde;
+}
+
+button.erase-button-dark {
+    background-color: #202224;
+    color: #dcddde;
+    border: 2px solid #dcddde;
+}
+
+div.dark-borders {
+    border-top: 1px solid #dcddde;
+    border-left: 1px solid #dcddde;
+}
+
+div.dark-mode-squares {
+    border-right: 1px solid #dcddde;
+    border-bottom: 1px solid #dcddde;
+}
+
+img.dark-alert-image{
+    filter: invert(100%);
+}
+
+span.dark-alert-to-erase {
+    color: #dcddde;
+}
+button#theme.dark-prompt {
+    background-color: #202224;
+    color: #dcddde;
+    border: 2px solid #dcddde;
+}
+

@@ -1,6 +1,6 @@
 @font-face {
     font-family: "Mighty Souly";
-    src: url(https://raw.githubusercontent.com/S0Iomon/etch-a-sketch/blob/main/resources/MightySoul.ttf) format("truetype");
+    src: url(/resources/MightySoul.ttf) format("truetype");
 }
 
 html, body {
